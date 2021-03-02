@@ -39,3 +39,6 @@ telegramegle/.idea}
 telegramegle/__pycache__
 telegramegle/.idea
 .idea
+build
+dist
+telegramegle.egg-info

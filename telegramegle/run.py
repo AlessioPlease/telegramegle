@@ -10,6 +10,13 @@ import time
 checkpoint = Checkpoint()
 
 # Checks updates from the bot's chat each 0.5 seconds
+# /start = starts a new conversation
+# /next = disconnects from current stranger and starts a new conversation
+# /stop = stops automatically starting new conversations
+# /auto = the bot will automatically look for strangers and will notify
+#         the user when a stranger meets the user's requirements.
+#         You can edit the bot's behavior in CustomHandler.py
+# /manual = turns automatic mode off
 bol = True
 def getUpdates():
     while bol:
@@ -52,6 +59,9 @@ thread.start()
 
 
 # Checks for any input from the PC's keyboard
+# /next = starts a new conversation
+# /stop = stops automatically starting new conversations
+# /exit = disconnects from current stranger and doesn't start a new conversation
 while True:
     inputStr = input('')
 
@@ -62,7 +72,7 @@ while True:
     elif inputStr.strip() == '/stop':
         print('WILL STOP AT NEXT DISCONNECTION')
         h.loop = False
-    elif inputStr.strip() == '/exit':  # auto and manual mode and start?
+    elif inputStr.strip() == '/exit':
         bol = False
         cc.disconnect()
         break

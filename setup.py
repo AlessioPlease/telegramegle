@@ -8,6 +8,6 @@ setup(
     author='Alessio',
     author_email='none',
     description='Python API for Omegle chat and Telegram bot',
-    packages=[ 'pyomegle' ],
+    packages=[ 'telegramegle' ],
     install_requires=[ 'mechanize','Levenshtein' ]
 )
