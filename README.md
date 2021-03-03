@@ -7,7 +7,7 @@ To use Telegramegle you will need Python3 or a newer version. You can download a
 Once you have installed Python, run the following commands to install Telegramegle:
 ```
 cd your_path/telegramegle-development
-python setup.py install
+python setup.py install --user
 ```
 
 ### Run
