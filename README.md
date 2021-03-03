@@ -2,8 +2,7 @@
 Telegramegle is a Python API to use Omegle.com through Telegram bots.
 
 # Installation
-To use Telegramegle you will need Python3 or a newer version. You can download and install Python from [here](https://www.python.org/downloads/).
-
+To use Telegramegle you will need Python3 or a newer version. You can download and install Python from [here](https://www.python.org/downloads/).  
 Once you have installed Python, run the following commands to install Telegramegle:
 ```
 cd your_path/telegramegle-development
@@ -11,14 +10,14 @@ python setup.py install --user
 ```
 
 ### Run
-To run Telegramegle use the following commands:
+To run Telegramegle use the following commands 
+(however, you will need to set up the Telegram bot first):
 ```
 cd your_path/telegramegle-development/telegramegle
 python3 run.py
 ```
 
 # Telegram bot setup
-
 ### 1. Create a telegram bot
 As shown in [this guide](https://core.telegram.org/bots%236-botfather), follow these steps:
 1. Open the Telegram app
@@ -27,8 +26,7 @@ As shown in [this guide](https://core.telegram.org/bots%236-botfather), follow t
 4. Write a name for your nor
 5. Write a username for you bot
 
-The BotFather will now generate a unique *token*, specific for your bot. It will look something like this: `110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw`
-
+The BotFather will now generate a unique *token*, specific for your bot. It will look something like this: `110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw`  
 **Keep your token secure and store it safely, it can be used by anyone to control your bot.**
 
 ### 2. Get your Telegram user ID
@@ -52,5 +50,10 @@ If everything went according to the plan, the output should contain your Telegra
 3. Edit the `updatesUrl` variable replacing `<YOUR BOT TOKEN>` with your bot's token (you must delete the angle brackets too)
 4. Edit the `chatId` variable replacing `<YOUR CHAT ID>` with your Telegram user ID (you must delete the angle brackets too)
 
+### You are all set! Enjoy!
 
-####You are all set! Enjoy!
+# Customization
+In order for the Omegle API to work properly I added two classes: `CustomHandler` and `CustomClient`.  
+The `CustomHandler` class (children of OmegleHandler) will process all events coming from the server (for example, incoming messages from the stranger).  
+The `CustomClient` class ("clone" of OmegleClient) is used to deal with all client's events and send http requests to the server.  
+I suggest not to edit `pyomegle.py` and to edit the custom classes instead.
