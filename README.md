@@ -5,7 +5,7 @@ Telegramegle is a Python API to use Omegle.com through Telegram bots.
 To use Telegramegle you will need Python3 or a newer version. You can download and install Python from [here](https://www.python.org/downloads/).  
 Once you have installed Python, run the following commands to install Telegramegle:
 ```
-cd your_path/telegramegle-development
+cd your_path/telegramegle-master
 python setup.py install --user
 ```
 
