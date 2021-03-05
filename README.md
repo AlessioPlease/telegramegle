@@ -19,7 +19,7 @@ python3 run.py
 
 # Telegram bot setup
 ### 1. Create a telegram bot
-As shown in [this guide](https://core.telegram.org/bots%236-botfather), follow these steps:
+As shown in [this guide](https://core.telegram.org/bots#6-botfather), follow these steps:
 1. Open the Telegram app
 2. Start a chat with [@botfather](https://t.me/botfather) and send the message **/start**
 3. Use the **/newbot** command to create a new bot
