@@ -1,7 +1,7 @@
 import requests
 import json
 
-updatesUrl = 'https://api.telegram.org/bot<YOUR BOT TOKEN>/getUpdates'
+updatesUrl = 'https://api.telegram.org/<YOUR BOT TOKEN>/getUpdates'
 userId = ''
 
 data = {
