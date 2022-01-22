@@ -30,12 +30,16 @@ The BotFather will now generate a unique *token*, specific for your bot. It will
 **Keep your token secure and store it safely, it can be used by anyone to control your bot.**
 
 ### 2. Get your Telegram user ID
+To retrieve your Telegram user ID you can start a chat with one of these two bots (just typing `/start` will suffice):
+1. [@userinfobot](https://t.me/userinfobot) (more informations [here](https://github.com/nadam/userinfobot))
+2. [@getmyid_bot](https://t.me/getmyid_bot) (more informations [here](https://botostore.com/c/getmyid_bot/))
+
+If neither of the bots happen to work follow the next steps:
 1. Open the Telegram app
 2. Start a chat with your bot and send the message **/start** (your bot can be found using the username you've chosen)
 3. Open the file `telegramSetup.py`
 4. Edit the `updatesUrl` variable replacing `<YOUR BOT TOKEN>` with your bot's token (you must delete the angle brackets too)
-
-4. Finally, run `telegramSetup.py` using following commands:
+5. Finally, run `telegramSetup.py` using following commands:
 ```
 cd your_path/telegramegle-development/telegramegle
 python3 telegramSetup.py
